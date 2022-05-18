@@ -6,6 +6,7 @@ import Addpost from './Components/Addpost';
 import Searchpost from './Components/Searchpost';
 import Header from './Components/Header';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Viewpost from './Components/Viewpost';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
        <Routes>
        <Route path="/" exact element={<Addpost/>}/>
        <Route path="/search" exact element={<Searchpost/>}/>
+       <Route path="/view" exact element={<Viewpost/>}/>
        
        
 
